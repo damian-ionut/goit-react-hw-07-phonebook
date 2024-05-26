@@ -1,0 +1,55 @@
+.container {
+  margin: 50px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px; 
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.phonebookTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contactsTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.loader {
+  margin-top: 10px;
+  width: 120px;
+  height: 22px;
+  border-radius: 20px;
+  color: #007bff;
+  border: 2px solid;
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: currentColor;
+  animation: l6 2s infinite;
+}
+
+@keyframes l6 {
+  100% {
+    inset: 0;
+  }
+}
